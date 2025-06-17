@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: weather-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: API_KEY
+        value: eb754f1f98acad598a3eaae78382ce12
